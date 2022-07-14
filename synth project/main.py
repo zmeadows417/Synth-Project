@@ -1,5 +1,3 @@
-from msilib.schema import tables
-from this import d
 import numpy as np
 import scipy.io.wavfile as wav
 
@@ -52,6 +50,6 @@ def a() :
     amplitude = 10 ** (gain / 20)
     output *= amplitude
     
-    wav.write('sawtoothtest.wav', sample_rate, output.astype(np.float32))
+    wav.write('sawtooth.wav', sample_rate, output.astype(np.float32))
     
 a()
